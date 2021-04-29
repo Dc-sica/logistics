@@ -21,16 +21,16 @@ const service = axios.create({
 // request拦截器
 service.interceptors.request.use(
   config => {
-    if (config.url !== 'api/user/login') {
-      config.headers.Authorization = (() => {
-        if (getTokenInfo()) {
-          return getTokenInfo()
-        } else {
-          location.href = '/login'
-          localStorage.removeItem('userInfo')
-        }
-      })()
-    }
+    // if (config.url !== 'api/user/login') {
+    //   config.headers.Authorization = (() => {
+    //     if (getTokenInfo()) {
+    //       return getTokenInfo()
+    //     } else {
+    //       location.href = '/login'
+    //       localStorage.removeItem('userInfo')
+    //     }
+    //   })()
+    // }
     if (config.headers.showLoading) {
       showLoading()
     }

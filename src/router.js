@@ -26,58 +26,58 @@ let router = new Router({
   routes: routeList
 })
 
-let treeToArray = (array, tree) => {
-  tree.forEach(item => {
-    if (item.path !== '/404' && item.path !== '/' && item.path !== '/login') {
-      array.push(item.path)
-    }
-    if (item.childNodes && item.childNodes.length > 0) {
-      treeToArray(array, item.childNodes)
-    }
-  })
-  return array
-}
-const whiteList = ['/login', '/404']
-router.beforeEach((to, from, next) => {
-  let subPath = localStorage.getItem('subPath') && JSON.parse(localStorage.getItem('subPath')) || []
-  document.title = baseInfo.BASE_TITLE + '-' + to.meta.text
-  if (localStorage.tokenInfo && localStorage.menuTree && localStorage.userInfo) {
-    let rightList = treeToArray([], JSON.parse(localStorage.menuTree))
-    // let rightList = treeToArray([], menuTree)
-    if (to.path === '/404' || to.path === '/' || to.path === '/login') {
-      next()
-    } else {
-      let index = routeList[1].children.findIndex(item => item.path === to.path)
-      // console.log(to.path)
-      // next()
-      if (index === -1) {
-        next('/404')
-      } else {
-        let index = subPath.findIndex(item => item.path === to.path)
-        if (index === -1) {
-          subPath.push({
-            path: to.path,
-            text: to.meta.text,
-            query: to.query,
-            params: to.params,
-            fullPath: to.fullPath
-          })
-        }
-        localStorage.setItem('subPath', JSON.stringify(subPath))
-        next()
-      }
-    }
-  } else {
-    if (whiteList.indexOf(to.path) !== -1) {
-      next()
-    } else {
-      localStorage.removeItem('tokenInfo')
-      localStorage.removeItem('menuTree')
-      localStorage.removeItem('userInfo')
-      next('/login')
-    }
-  }
-})
+// let treeToArray = (array, tree) => {
+//   tree.forEach(item => {
+//     if (item.path !== '/404' && item.path !== '/' && item.path !== '/login') {
+//       array.push(item.path)
+//     }
+//     if (item.childNodes && item.childNodes.length > 0) {
+//       treeToArray(array, item.childNodes)
+//     }
+//   })
+//   return array
+// }
+// const whiteList = ['/login', '/404']
+// router.beforeEach((to, from, next) => {
+//   let subPath = localStorage.getItem('subPath') && JSON.parse(localStorage.getItem('subPath')) || []
+//   document.title = baseInfo.BASE_TITLE + '-' + to.meta.text
+//   if (localStorage.tokenInfo && localStorage.menuTree && localStorage.userInfo) {
+//     let rightList = treeToArray([], JSON.parse(localStorage.menuTree))
+//     // let rightList = treeToArray([], menuTree)
+//     if (to.path === '/404' || to.path === '/' || to.path === '/login') {
+//       next()
+//     } else {
+//       let index = routeList[1].children.findIndex(item => item.path === to.path)
+//       // console.log(to.path)
+//       // next()
+//       if (index === -1) {
+//         next('/404')
+//       } else {
+//         let index = subPath.findIndex(item => item.path === to.path)
+//         if (index === -1) {
+//           subPath.push({
+//             path: to.path,
+//             text: to.meta.text,
+//             query: to.query,
+//             params: to.params,
+//             fullPath: to.fullPath
+//           })
+//         }
+//         localStorage.setItem('subPath', JSON.stringify(subPath))
+//         next()
+//       }
+//     }
+//   } else {
+//     if (whiteList.indexOf(to.path) !== -1) {
+//       next()
+//     } else {
+//       localStorage.removeItem('tokenInfo')
+//       localStorage.removeItem('menuTree')
+//       localStorage.removeItem('userInfo')
+//       next('/login')
+//     }
+//   }
+// })
 
 export default router
 

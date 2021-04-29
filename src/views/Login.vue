@@ -104,42 +104,44 @@ export default {
         if (valid) {
           this.loading = true
           localStorage.menuTree = JSON.stringify(menuItems)
-          sysLogin({
-            username: this.ruleForm.userName,
-            password: this.ruleForm.password
-          }).then(res => {
-            if (res.data.code === 200) {
-              this.loading = false
-              setNewToken(res.data.data.tokenHead + ' ' + res.data.data.token, 36000000)
-              getInfo().then(res => {
-                if (res.data.code === 200) {
-                  // localStorage.menuTree = JSON.stringify(res.data.data.menus)
-                  if (_that.checked) {
-                    localStorage.userName = this.ruleForm.userName
-                    localStorage.password = this.ruleForm.password
-                  } else {
-                    localStorage.removeItem('userName')
-                    localStorage.removeItem('password')
-                  }
-                  localStorage.userInfo = JSON.stringify(res.data.data.userInfo)
-                  localStorage.removeItem('subPath')
-                  this.$router.push('/home')
-                } else {
-                  this.$message.error(res.data.message)
-                }
-              })
-            } else {
-              this.loading = false
-              this.$message.error(res.data.message)
-              // for (let i in this.errorTips) {
-              //   this.errorTips[i] = ''
-              // }
-              // this.errorTips.passWord = '用户名或密码错误'
-            }
-          }).catch(error => {
-            this.loading = false
-            console.log(error)
-          })
+          localStorage.removeItem('subPath')
+          this.$router.push('/home')
+          // sysLogin({
+          //   username: this.ruleForm.userName,
+          //   password: this.ruleForm.password
+          // }).then(res => {
+          //   if (res.data.code === 200) {
+          //     this.loading = false
+          //     setNewToken(res.data.data.tokenHead + ' ' + res.data.data.token, 36000000)
+          //     getInfo().then(res => {
+          //       if (res.data.code === 200) {
+          //         // localStorage.menuTree = JSON.stringify(res.data.data.menus)
+          //         if (_that.checked) {
+          //           localStorage.userName = this.ruleForm.userName
+          //           localStorage.password = this.ruleForm.password
+          //         } else {
+          //           localStorage.removeItem('userName')
+          //           localStorage.removeItem('password')
+          //         }
+          //         localStorage.userInfo = JSON.stringify(res.data.data.userInfo)
+          //         localStorage.removeItem('subPath')
+          //         this.$router.push('/home')
+          //       } else {
+          //         this.$message.error(res.data.message)
+          //       }
+          //     })
+          //   } else {
+          //     this.loading = false
+          //     this.$message.error(res.data.message)
+          //     // for (let i in this.errorTips) {
+          //     //   this.errorTips[i] = ''
+          //     // }
+          //     // this.errorTips.passWord = '用户名或密码错误'
+          //   }
+          // }).catch(error => {
+          //   this.loading = false
+          //   console.log(error)
+          // })
         } else {
           return false;
         }

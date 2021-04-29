@@ -1,10 +1,4 @@
-/*
- * @Author: Jason_Ma
- * @Date: 2021-01-19 13:37:25
- * @LastEditors: Jason_Ma
- * @LastEditTime: 2021-02-07 10:54:31
- * @FilePath: /hos-logistics-management/src/apis/commonApi.js
- */
+
 
 import request from './../config/service'
 

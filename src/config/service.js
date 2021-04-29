@@ -1,11 +1,3 @@
-/*
- * @Author: Jason_Ma
- * @Date: 2021-01-12 17:03:58
- * @LastEditors: Jason_Ma
- * @LastEditTime: 2021-01-27 14:27:44
- * @FilePath: /hos-logistics-management/src/config/service.js
- */
-
 import axios from 'axios'
 import { Loading } from 'element-ui'
 import config from './config'
@@ -16,7 +8,9 @@ let baseUrl = config.BASE_URL
 const service = axios.create({
   baseURL: baseUrl,
   timeout: 150000, // 请求超时时间
-
+  // headers: {
+  //   referer: 'https://api.imjad.cn/'
+  // }
 })
 // request拦截器
 service.interceptors.request.use(

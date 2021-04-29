@@ -1,11 +1,3 @@
-/*
- * @Author: Jason_Ma
- * @Date: 2021-01-22 16:01:29
- * @LastEditors: Jason_Ma
- * @LastEditTime: 2021-02-02 17:27:00
- * @FilePath: /hos-logistics-management/src/apis/outAndIn/index.js
- */
-
 
 import request from './../../config/service'
 

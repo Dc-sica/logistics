@@ -1,11 +1,3 @@
-/*
- * @Author: Jason_Ma
- * @Date: 2021-01-06 10:59:46
- * @LastEditors: Jason_Ma
- * @LastEditTime: 2021-02-02 09:02:37
- * @FilePath: /hos-logistics-management/src/router.js
- */
-
 import Vue from 'vue'
 import Router from 'vue-router'
 import routeList from './routeList'

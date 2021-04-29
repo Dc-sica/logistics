@@ -1,10 +1,4 @@
-/*
- * @Author: Jason_Ma
- * @Date: 2021-01-18 13:54:33
- * @LastEditors: Jason_Ma
- * @LastEditTime: 2021-01-22 10:32:02
- * @FilePath: /hos-logistics-management/src/apis/loginApi.js
- */
+
 import request from './../config/service'
 
 

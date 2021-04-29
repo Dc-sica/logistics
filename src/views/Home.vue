@@ -19,7 +19,7 @@
           <router-view style="height:calc(100% - 35px);margin:0px 10px;"/>
         </div>
         <div class="footer-info">
-          {{this.$baseInfo.COPY_RIGHT}}
+
         </div>
       </div>
     </div>

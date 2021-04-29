@@ -1,10 +1,4 @@
-/*
- * @Author: Jason_Ma
- * @Date: 2021-01-25 15:10:38
- * @LastEditors: Jason_Ma
- * @LastEditTime: 2021-01-28 09:53:42
- * @FilePath: /hos-logistics-management/src/apis/inventoryQuery/index.js
- */
+
 
 import request from './../../config/service'
 

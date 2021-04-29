@@ -1,10 +1,3 @@
-/*
- * @Author: Jason_Ma
- * @Date: 2021-01-06 11:01:46
- * @LastEditors: Jason_Ma
- * @LastEditTime: 2021-02-03 12:30:08
- * @FilePath: /hos-logistics-management/src/routeList.js
- */
 import Home from './views/Home.vue'
 let routeList = [{
     path: '/',
@@ -2491,6 +2484,62 @@ let routeList = [{
         icon: '1',
         component: () =>
           import('./views/checkManage/checkStaReport/index.vue')
+      },
+      {
+        path: '/personalDomain',
+        name: 'personalDomain',
+        text: '随时记录',
+        meta: {
+          text: '随时记录',
+          menuPath: '/personalDomain',
+          menuBread: ['随时记录', '随时记录']
+        },
+        isShow: true,
+        icon: '1',
+        component: () =>
+          import('./views/personalDomain/index.vue')
+      },
+      {
+        path: '/someNote',
+        name: 'someNote',
+        text: '没有记录',
+        meta: {
+          text: '没有记录',
+          menuPath: '/someNote',
+          menuBread: ['随时记录', '没有记录']
+        },
+        isShow: true,
+        icon: '1',
+        component: () =>
+          import('./views/personalDomain/someNote.vue')
+      },
+      {
+        path: '/happening',
+        name: 'happening',
+        text: '就没有发生',
+        meta: {
+          text: '就没有发生',
+          menuPath: '/happening',
+          menuBread: ['随时记录', '就没有发生']
+        },
+        isShow: true,
+        icon: '1',
+        component: () =>
+          import('./views/personalDomain/happening.vue')
+      },
+      {
+        path: '/notebook',
+        name: 'notebook',
+        text: '笔记本',
+        meta: {
+          text: '笔记本',
+          menuPath: '/notebook',
+          menuBread: ['笔记本', '笔记本']
+        },
+        isShow: true,
+        icon: '1',
+        component: () =>
+          import('./views/notebook/index.vue')
       },
       {
         path: '*',

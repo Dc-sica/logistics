@@ -1,13 +1,7 @@
 <template>
   <div id="header-bar" class="p-clear">
     <div class="p-left logo-content p-animation">
-      <div class="logo-text">
-        <img
-          src="./../../assets/image/login-logo.png"
-          style="height: 90%"
-          alt=""
-        />
-      </div>
+      
     </div>
     <div class="right-content p-animation">
       <div class="right-container p-animation">
@@ -58,8 +52,8 @@
 
           <el-dropdown trigger="click" @command="handleCommand">
             <span style="color: #fff">
-              {{ formInfo.name
-              }}<i class="el-icon-arrow-down el-icon--right"></i>
+              {{ formInfo.name}}
+              <i class="el-icon-arrow-down el-icon--right"></i>
             </span>
             <el-dropdown-menu slot="dropdown">
               <el-dropdown-item icon="el-icon-plus" command="changePwd"
@@ -179,7 +173,9 @@ export default {
       infoList: [],
       msgVisible: false,
       pwdVisible: false,
-      formInfo: {},
+      formInfo: {
+        name: 'admin'
+      },
       rules: {
         oldPass: [
           { required: true, validator: validateInput, trigger: "blur" },

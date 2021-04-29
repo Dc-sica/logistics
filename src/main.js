@@ -1,11 +1,3 @@
-/*
- * @Author: Jason_Ma
- * @Date: 2021-01-06 10:50:50
- * @LastEditors: Jason_Ma
- * @LastEditTime: 2021-01-19 10:35:47
- * @FilePath: /hos-logistics-management/src/main.js
- */
-
 import Vue from 'vue'
 import App from './App.vue'
 

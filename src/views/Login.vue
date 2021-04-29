@@ -8,7 +8,7 @@
             <div class="right-content p-right">
               <div class="right-login-box">
                 <p style="text-align: center;font-size: 30px;color: #159FB8;">
-                  医院后勤管理系统
+                  管理系统
                 </p>
                 <div class="login-content">
                   <el-form :model="ruleForm"

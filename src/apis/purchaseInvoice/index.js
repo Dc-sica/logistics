@@ -1,10 +1,3 @@
-/*
- * @Author: Jason_Ma
- * @Date: 2021-01-25 16:33:01
- * @LastEditors: Jason_Ma
- * @LastEditTime: 2021-01-26 09:28:40
- * @FilePath: /hos-logistics-management/src/apis/purchaseInvoice/index.js
- */
 
 import request from './../../config/service'
 

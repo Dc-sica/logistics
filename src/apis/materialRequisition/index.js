@@ -1,10 +1,4 @@
-/*
- * @Author: Jason_Ma
- * @Date: 2021-01-25 11:32:41
- * @LastEditors: Jason_Ma
- * @LastEditTime: 2021-01-25 14:57:13
- * @FilePath: /hos-logistics-management/src/apis/materialRequisition/index.js
- */
+
 import request from './../../config/service'
 
 // /materialCollection/materialListPage 物资领用 / 退库 / 审批列表 物资申请类别(0领用,1退库)

@@ -1,10 +1,3 @@
-/*
- * @Author: Jason_Ma
- * @Date: 2021-01-25 16:23:12
- * @LastEditors: Jason_Ma
- * @LastEditTime: 2021-02-02 17:30:26
- * @FilePath: /hos-logistics-management/src/apis/purchaseReceipt/index.js
- */
 
 import request from './../../config/service'
 // /purchase/receipt/page 列表

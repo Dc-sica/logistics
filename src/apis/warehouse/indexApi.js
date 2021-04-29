@@ -1,10 +1,3 @@
-/*
- * @Author: Jason_Ma
- * @Date: 2021-01-11 16:26:43
- * @LastEditors: Jason_Ma
- * @LastEditTime: 2021-01-22 15:52:32
- * @FilePath: /hos-logistics-management/src/apis/warehouse/indexApi.js
- */
 
 import request from './../../config/service'
 

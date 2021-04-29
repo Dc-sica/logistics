@@ -1,0 +1,129 @@
+.customer-form-container{
+  height: calc(100vh - 295px);
+  display: flex;
+  min-width: 1000px;
+  margin-bottom:10px;
+  .item {
+    padding: 6px 12px;
+    margin:10px;
+    border: dashed 1px #BFBFBF;
+  }
+  .item:hover {
+    background-color: #fdfdfd;
+    cursor: move;
+  }
+}
+.types-container{
+  width:300px;
+  height:calc(100% - 20px);
+  padding:10px;
+  border:1px solid #E8EAED;
+}
+.question-select-item{
+  display: inline-block;
+  margin:10px
+}
+.ques-container{
+  flex-grow: 1;
+  height:100%;
+  overflow:hidden;
+  border:1px solid #E8EAED;
+  margin:0px 30px;
+  max-width: 900px;
+}
+.center-title{
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  border-bottom:1px solid #E8EAED;
+  font-size: 18px;
+}
+.setting-container{
+  width: 400px;
+  height:calc(100% - 40px);
+  padding:20px;
+  overflow-y: auto;
+  border:1px solid #E8EAED;
+}
+.qus-type-title{
+  height: 40px;
+  background: #6DB26A;
+  margin:10px;
+  color:#fff;
+  text-align: center;
+  line-height: 40px;
+}
+.question-list-item{
+  min-height: 90px;
+  padding:10px;
+  position: relative;
+  border-bottom:1px solid #EEEEEE;
+}
+.ghost-class {
+  background-color:#b3b3b3 !important;
+}
+.active-ques-item{
+  background: #dedede;
+}
+.delete-item-icon{
+  position: absolute;
+  right:10px;
+  bottom: 10px;
+}
+.drag-class {
+  background-color: #dedede !important;
+  opacity: 1 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background-image: none !important;
+}
+.empty-question-list{
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  columns: #999999;
+  font-size: 15px;
+}
+.title {
+  padding: 6px 12px;
+}
+
+.question-detail-container{
+  .question-detail-title{
+    margin-bottom:10px;
+  }
+  .question-detail-box{
+    li{
+      margin-bottom:8px;
+    }
+  }
+  .question-detail-require{
+    color:red
+  }
+}
+.question-conf-container{
+  width:300px;
+  margin:0px 10px;
+  .base-conf{
+    .base-conf-item{
+       margin-bottom:20px;
+      .base-conf-title{
+        margin-bottom:8px
+      }
+      .base-conf-title::after{
+        content: "：";
+      }
+    }
+  }
+  .select-items{
+    list-style: none;
+    margin-bottom: 8px;
+  }
+  .add-select-item{
+    border:1px dashed #dedede;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+  }
+  
+}

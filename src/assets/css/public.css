@@ -1,0 +1,560 @@
+/* i9 */
+/* i8 */
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
+  font-family: 'PingFangSC', 'helvetica neue', 'hiragino sans gb', 'arial', 'microsoft yahei', 'simsun', 'sans-serif' !important;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+}
+
+body {
+  overflow: hidden;
+}
+.animate{
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s; /* Safari */
+}
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visit {
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+ul li:hover {
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 1959402 */
+  src: url('//at.alicdn.com/t/font_1959402_wmnd79ykjr.eot');
+  src: url('//at.alicdn.com/t/font_1959402_wmnd79ykjr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1959402_wmnd79ykjr.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1959402_wmnd79ykjr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1959402_wmnd79ykjr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1959402_wmnd79ykjr.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.p-left {
+  float: left;
+}
+
+.p-right {
+  float: right;
+}
+
+.p-clear::after {
+  content: "";
+  display: block;
+  height: 0px;
+  width: 0px;
+  clear: both;
+}
+
+.p-cursor {
+  cursor: pointer;
+}
+
+#app {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.p-container {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px #e9eaee;
+}
+
+.p-container-border {
+  border: 1px solid rgba(232, 234, 237, 1);
+  margin: 8px;
+}
+
+.p-con-header-tit {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.p-input,
+.el-input__inner {
+  outline: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select.p-input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  background: url("../image/selec-right-icon.png") no-repeat scroll right center transparent;
+  background-size: auto 6px;
+  padding-right: 14px !important;
+  min-width: 181px;
+  max-width: 181px;
+  color: #999;
+  height: 30px;
+}
+
+select option {
+  color: #333;
+}
+
+.p-input:focus {
+  border-color: #409EFF;
+  outline: 0;
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+}
+
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+}
+
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999;
+}
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #999;
+}
+
+.p-textarea {
+  width: 200px;
+  outline: none;
+  border: 1px solid #E9EAEE;
+  padding-left: 10px;
+  height: 50px;
+  padding-top: 5px;
+}
+
+.p-btn {
+  padding: 8px 25px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin: 8px 12px;
+  color: #fff;
+}
+
+.p-btn:hover {
+  opacity: 0.8;
+}
+
+.p-btn-cancel {
+  background: #b3b3b3;
+}
+
+.p-btn-primary {
+  background: #ff8c03;
+}
+
+.p-btn-primary:hover {
+  background: #ff8c03;
+  color: #fff;
+  border: 1px solid #ff8c03;
+}
+
+.p-btn-primary:active {
+  background: #ff8c03;
+  color: #fff;
+  border: 1px solid #ff8c03;
+}
+
+.p-btn-error {
+  background: #e22020;
+}
+
+.p-btn-circle {
+  background: none;
+  border: 1px solid #ff8c03;
+  color: #FF8C00
+}
+
+.p-mt10 {
+  margin: 0px 10px;
+}
+
+.p-align-left {
+  text-align: left;
+}
+
+.p-align-right {
+  text-align: right;
+}
+
+.p-align-center {
+  text-align: center;
+}
+
+.p-bt-tip::before {
+  color: #E32020;
+  content: "*";
+  padding: 0px 5px;
+}
+
+.p-btn-text-delete {
+  color: #E32020 !important;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.p-input-title::after {
+  content: "：";
+}
+
+.p-btn-text-prmary {
+  color: #ff8c01;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.p-modal-table {
+  margin: 0px auto;
+}
+
+.p-modal-table td {
+  height: 45px;
+}
+
+.p-page-nation {
+  margin: 10px;
+}
+
+.p-bread-right {
+  position: fixed;
+  right: 10px;
+  top: 49px;
+  z-index: 9;
+}
+
+/* .el-input__icon {
+  line-height: 28px;
+} */
+
+.el-table .cell {
+  color: #000 !important;
+}
+.el-table  td.column .cell {
+  padding: 0;
+}
+.multiTd {
+  border-bottom: 1px solid #EBEEF5;
+  text-align: center;
+}
+.multiTd div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+.multiTd:last-child {
+  border-bottom: 0;
+}
+/* .el-table__header th:nth-child(2n-1){
+  background: #e2eefe;
+}
+.el-table__header th:nth-child(2n){
+  background: #f3f6fb;
+} */
+.el-radio__inner {
+  background: #E8EAED;
+  border: 1px solid #E8EAED;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: #E8EAED;
+  background: #E8EAED;
+}
+
+.el-radio__inner::after {
+  background: #FF8C00;
+  width: 8px;
+  height: 8px;
+}
+
+.el-radio__input.is-checked+.el-radio__label {
+  color: inherit;
+}
+
+.el-radio__inner:hover {
+  border-color: #E8EAED;
+}
+
+.el-radio__inner:active {
+  border-color: #E8EAED;
+}
+
+.el-radio__original:focus {
+  border-color: #E8EAED;
+}
+
+.p-animation {
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background: #ff8c03;
+  border-color: #ff8c03;
+}
+
+.el-checkbox__inner:hover {
+  border-color: #ff8c03 !important;
+}
+
+.p-confirm {
+  position: fixed;
+  display: table;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+}
+
+.p-confirm .p-confirm-container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.p-confirm .p-confirm-container .p-confirm-content {
+  display: inline-block;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.p-confirm .p-confirm-container .p-confirm-content .p-confirm-header {
+  background: #1D93A8;
+  color: #fff;
+  padding: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.p-confirm .p-confirm-container .p-confirm-content .p-confirm-body {
+  padding: 50px 10px
+}
+
+.mt-60 {
+  margin-top: -60px;
+}
+
+.diable {
+  pointer-events: none;
+}
+
+#titleBtn {
+  background-color: #ff8c00;
+  color: #fff;
+  border-color: #ff8c00;
+}
+
+.p-btn-empty {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 140, 0, 1);
+  color: #FF8C00;
+}
+
+.p-btn-empty:hover {
+  background: #FF8C00;
+  border: 1px solid rgba(255, 140, 0, 1);
+  color: #fff;
+}
+
+.p-btn-empty:active {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 140, 0, 1);
+  color: #FF8C00;
+}
+#nevboxs .el-select {
+  width: 109px;
+}
+#nevboxs .el-input--suffix .el-input__inner {
+  padding-right: 0px;
+  padding-left: 12px;
+  color:#333;
+  border-color: #cdcbcb;
+}
+#nevboxs .el-select .el-input .el-select__caret {
+  color: #333;
+  line-height: 32px;
+}
+#nevboxs .el-input__inner::placeholder {
+  color: #333;
+}
+.empty {
+  width: 80%;
+  height: 400px;
+  line-height: 400px;
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+  margin: 0 auto;
+}
+.scrollbar::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 0px; /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  background: #dddddd;
+
+}
+.scrollbar::-webkit-scrollbar-track {
+  background: #f0f2f5;
+}
+.scrollxbar::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 0px; /*高宽分别对应横竖滚动条的尺寸*/
+  height: 7px;
+  position: relative;
+  top: 1px;
+}
+.scrollxbar::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  background: #dddddd;
+
+}
+.scrollxbar::-webkit-scrollbar-track {
+  background: #f0f2f5;
+}
+.el-date-editor .el-range__icon {
+  line-height: 24px!important;
+}
+.el-date-editor .el-range-separator {
+  line-height: 24px!important;
+}
+.elitem {
+  width: 100%;
+}
+.elitem .el-form-item__content {
+  width: 60%;
+}
+.elitem.time .el-form-item__content {
+  width: 70%;
+}
+.elitem .el-select {
+  width: 100%;
+}
+.showBtn {
+  float: right!important;
+  text-align: right;
+  padding-right: 2%;
+}
+.el-menu-item, .el-submenu__title{
+  height: 40px !important;
+  line-height: 40px !important;
+  margin-bottom: 10px;
+}
+.el-submenu .el-menu-item{
+  height: 40px !important;
+  line-height: 40px !important;
+
+}
+.el-menu-item.active{
+  font-weight: normal !important;
+}
+
+.el-table td{
+  padding:6px  0px !important
+}
+.el-input__inner{
+  height: 32px !important;
+  line-height: 32px !important;
+}
+.el-button{
+  padding: 8px 12px !important;
+}
+.el-button.iconfont {
+  padding: 0!important;
+}
+.el-button.el-button--text {
+  padding: 0!important;
+}
+.el-form-item__label {
+  padding-right: 0!important;
+}
+.el-form--inline .el-form-item{
+  margin-bottom: 0px !important;
+}
+.pagination-container{
+  padding:8px 10px !important;
+}
+.btn-yellow{
+  background-color: #FF8C00 !important;
+  color: #fff !important;
+  border: #FF8C00 !important;
+}
+/* @import '//at.alicdn.com/t/font_1959402_sjcfv24s3s9.css' */

@@ -1,0 +1,130 @@
+#sys-login {
+  height: 100%;
+
+  .main-content {
+    height: 100%;
+    min-width: 1200px;
+    overflow: auto;
+    margin: 0px auto;
+
+    .login-header {
+      padding: 10px 30px;
+    }
+
+    .center-container {
+      height: 100%;
+      // background:url('../image/big-bg.jpg');
+      background-size: auto 100%;
+    }
+
+    .bg-img {
+      height: 100%;
+      background: linear-gradient(#0b9eb7 0%, #19a3bb 0%, #34a3b7 0%, #00a1be 0%, #009bb7 67%, #0cb1ce 100%);
+      // background-image: url('../image/login-bg.png');
+      max-width: 1920px;
+      margin: 0px auto;
+      background-size: 100% 100%;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+    }
+
+    .left-bg {
+      flex: 1;
+      // width: 50%;
+      height: 100%;
+      background: url('./../image/left.png') no-repeat;
+      background-size: 100% 100%;
+    }
+
+    .right-bg {
+      display: flex;
+      padding-left: 10%;
+      flex: 1;
+      height: 100%;
+      background: url('./../image/right.png') no-repeat;
+
+      background-size: 100% 100%;
+    }
+
+    .login-footer {
+      line-height: 45px;
+      color: #858383;
+      font-size: 16px;
+    }
+
+    .logo-text {
+      border-left: 1px solid #333333;
+      margin: 10px 20px;
+      color: #464545;
+      font-size: 30px;
+      padding: 3px 10px;
+    }
+
+    .right-content {
+      display: table;
+      height: 100%;
+      // margin-right: 35%;
+      position: relative;
+
+      .right-login-box {
+        display: table-cell;
+        vertical-align: middle;
+
+        .login-content {
+          overflow: hidden;
+          // background: #fff;
+          display: inline-block;
+          padding: 20px;
+          border-radius: 10px;
+
+          // border-radius: 5px;
+          .login-title {
+            width: 100%;
+            margin: 0px auto;
+            margin-bottom: 90px;
+            text-align: left;
+            color: #0b9eb7;
+            font-weight: bold;
+            position: relative;
+
+            span {
+              position: absolute;
+              z-index: 2;
+              width: 100%;
+              font-size: 24px;
+              display: block;
+              top: 5px;
+              left: -30px;
+            }
+          }
+
+          .login-icon {
+            font-size: 24px;
+            margin-right: 10px;
+          }
+
+          .login-input {
+            width: 80%;
+          }
+
+          .login-btn {
+            border-radius: 30px;
+            font-size: 20px;
+            height: 50px;
+            width: 300px;
+            text-align: center;
+            color: #fff;
+            background: linear-gradient(rgba(70, 182, 234, 1) 0%, rgba(77, 198, 227, 1) 60%, rgba(39, 217, 234, 1) 100%);
+            border-radius: 46px;
+          }
+
+
+        }
+      }
+
+    }
+
+  }
+}
